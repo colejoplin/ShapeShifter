@@ -23,6 +23,8 @@ class ViewController: UIViewController {
         shape2 = largeOpening()
         if let smallShape = shape1 {
             shapeLayer.path = smallShape.cgPath
+            shapeLayer.fillColor = UIColor.gray.cgColor
+            shapeLayer.strokeColor = UIColor.black.cgColor
             shapeView.layer.addSublayer(shapeLayer)
         }
         
